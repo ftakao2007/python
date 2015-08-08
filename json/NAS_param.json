@@ -1,0 +1,22 @@
+[
+    {
+        "nas": "(NAS Name)",
+        "volume": "(Volume Name)",
+        "size": "(Volume size)"
+    },
+    {
+        "nas": "nas_backup01",
+        "volume": "apache_log",
+        "size": "5g"
+    },
+    {
+        "nas": "nas_backup02",
+        "volume": "tomcat_log",
+        "size": "500m"
+    },
+    {
+        "nas": "nas_ecsite01",
+        "volume": "item_image",
+        "size": "10g"
+    }
+]
