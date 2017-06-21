@@ -1,0 +1,15 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+interface Printable {
+    {abstract} void print()
+    {abstract} void newPage()
+}
+
+class PrintClass {
+    void print()
+    void newPage()
+}
+
+Printable <|.. PrintClass
+@enduml
