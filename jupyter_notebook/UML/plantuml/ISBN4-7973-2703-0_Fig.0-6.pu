@@ -1,0 +1,38 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam sequenceParticipant underline
+
+actor User
+participant ":Client" as A
+participant ":Server" as B
+participant ":Device" as C
+
+User -> A: work
+activate A
+
+A -> B: open
+activate B
+B --> A
+deactivate B
+
+A -> B: print
+activate B
+
+B -> C: write
+activate C
+
+C --> B
+deactivate C
+B --> A
+deactivate B
+
+A -> B: close
+activate B
+B --> A
+deactivate B
+
+A --> User
+deactivate A
+
+
+@enduml
