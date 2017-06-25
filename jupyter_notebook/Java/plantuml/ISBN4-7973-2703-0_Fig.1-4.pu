@@ -1,0 +1,29 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+interface Aggregate {
+    {abstract} +iterator()
+}
+
+interface Iterator {
+    {abstract} +hasNext()
+    {abstract} +next()    
+}
+
+class ConcreteAggregate {
+    +iterator()
+}
+
+class ConcreteIterator {
+    -aggregate
+    +hasNext()
+    +next()
+}
+
+
+Aggregate --> Iterator : Creates >
+Aggregate <|.. ConcreteAggregate
+Iterator <|.. ConcreteIterator
+ConcreteAggregate <--o ConcreteIterator
+
+@enduml
