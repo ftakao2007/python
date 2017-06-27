@@ -1,0 +1,27 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Main {
+}
+
+class Print {
+    {abstract} +void printWeak()
+    {abstract} +void printStrong()
+}
+
+class PrintBanner {
+    -banner Banner
+    +void printWeak()
+    +void printStrong()    
+}
+
+class Banner {
+    +void showWithParen()
+    +void showWithAster()
+}
+
+Main --> Print : Uses >
+Print <|-- PrintBanner
+Banner <--o PrintBanner
+
+@enduml
