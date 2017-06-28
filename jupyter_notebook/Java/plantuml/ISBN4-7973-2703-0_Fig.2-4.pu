@@ -4,7 +4,7 @@ skinparam classAttributeIconSize 0
 class Main {
 }
 
-class Print {
+abstract class Print {
     {abstract} +void printWeak()
     {abstract} +void printStrong()
 }
