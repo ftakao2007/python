@@ -1,0 +1,13 @@
+development:
+  database: ftakao2007_development
+  username: ftakao2007
+  password: pass
+  port: 5432
+  host: 192.168.33.11
+
+production:
+  database: ftakao2007_production
+  username: ftakao2007
+  password: pass
+  port: 5432
+  host: 172.16.0.1
